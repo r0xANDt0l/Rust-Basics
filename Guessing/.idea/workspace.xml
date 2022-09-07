@@ -11,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="06k9xxq2" />
@@ -20,6 +20,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2EPUnD9M83mkSmFC7cWVzcfXHyc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/rodriguetos/Github-Repos/Guessing",
+    "last_opened_file_path": "/home/rodriguetos/Github-Repos/Rust-Learning/Guessing",
     "nodejs_package_manager_path": "npm",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "settings.editor.selected.configurable": "preferences.pluginManager"
@@ -68,6 +69,7 @@
       <updated>1662496877762</updated>
       <workItem from="1662496878930" duration="5298000" />
       <workItem from="1662551062958" duration="403000" />
+      <workItem from="1662551893401" duration="3000" />
     </task>
     <servers />
   </component>
