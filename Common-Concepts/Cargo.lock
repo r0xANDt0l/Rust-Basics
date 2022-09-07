@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "Common-Concepts"
+name = "common_concepts"
 version = "0.1.0"
