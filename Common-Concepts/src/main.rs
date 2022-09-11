@@ -1,5 +1,6 @@
 fn main() {
     // Variables
+
     let mut x = 5; // Naming convention for variables -> all_lowercase_with_underscores
     println!("The value of x is: {x}");
     x = 6;
@@ -18,7 +19,7 @@ fn main() {
 
     {
         let y = y * 2;
-        println!("The falue of y in the inner scope (Between the curly brackets) is {}" , y);
+        println!("The value of y in the inner scope (Between the curly brackets) is {}" , y);
     }
 
     println!("The value of y in the outside scope is {}", y);
@@ -104,7 +105,7 @@ fn main() {
 
     //Bools
 
-    // Used mainly in If's
+    // Used mainly in if's
 
     // Literally "True" or "False"
 
@@ -112,13 +113,70 @@ fn main() {
 
     let f : bool = false; //explicit type annotation
 
+    println!("t is {t}, and f is {f}");
+
     //Chars
 
     // Just a single UTF-8 (unicode) character
+    // ALWAYS USE '' INSTEAD OF "" FOR CHARS!!!!
 
     let c = 'z';
 
     let z : char = 'ℤ'; //explicit type annotation
 
     let hmm = '🤔';
+
+    println!("{c}, {z} and {hmm}");
+
+    //Compound types:
+    // Tuples and Arrays
+
+    //Tuples
+
+    //Read / Write data to different variables
+
+    let tuple_one = (254, 6.9, 1);
+    let (value1, value2, value3) = tuple_one;
+
+    println!("The first value is {value1}, the second value is {value2}, and the third value is {value3}");
+
+    //Read / Write data from the tuple itself
+
+    let tuple_two = (254, 6.9, 1);
+
+    let two_five_four = tuple_two.0;
+
+    let six_point_nine = tuple_two.1;
+
+    let one = tuple_two.2;
+
+
+    println!("The first value is {two_five_four}, the second value is {six_point_nine}, and the third value is {one}");
+
+    // Arrays
+
+    // All values must be the same kind, and it cannot grow or shrink like in other languages
+    // For a compound data value, we use vectors (future)
+
+    // Arrays are useful when we want our data allocated in a stack, and when we're having a fixed amount of elements
+
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+
+    // To set the type of the array with square brackets,  the type of the data, and the amount of values (starting from one)
+
+    let numbers_array_one : [i32; 5] = [1, 2, 3, 4, 5];
+
+    // We can make all the values in the array have the same value when initializing by setting the initial value, followed by a semicolon and the amount of values
+
+    let numbers_array_two = [1; 5];
+
+    // To read a value of an array, we use the name of the variable + [x]
+
+    println!("the first month is {}", months[0]);
+    println!("{}", numbers_array_one[1]);
+    println!("{}", numbers_array_two[2]);
+
+    // If we try to access an element that doesn't exist, the program will crash
+
 }
