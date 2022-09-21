@@ -43,4 +43,48 @@ fn main() {
 
     println!("Numbar is {numbar}");
 
+    // loops! They will run a piece of code until the world explodes, or when the user stops it
+
+    let mut counter = 0;
+
+    let result = loop {
+        counter +=1;
+
+        if counter == 10 {
+            // When you break and give a statement, the loop will return that value, in this case, we're multiplying counter by 2
+            break counter * 2;
+        }
+        // since it's the end of a variable creation, we end with a semicolon (duh)
+    };
+    println!("The result is {result}");
+
+    let mut count = 0;
+    'counting_up : loop {
+        println!("count = {count}");
+        let mut remaining = 10;
+
+        loop {
+            println!("remaining = {remaining}");
+            if remaining == 9 {
+                break;
+            }
+            if count == 2 {
+                break 'counting_up;
+            }
+            remaining -=1;
+        }
+        count +=1;
+    }
+    println!("end count = {count}");
+
+    // While loops
+    // They loop until a condition is met
+
+    let mut numego = 3;
+
+    while numego != 0 {
+        println!("{numego}");
+        numego -=1;
+    }
+    println!("Leifte Off!");
 }
