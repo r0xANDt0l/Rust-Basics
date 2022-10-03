@@ -87,4 +87,14 @@ fn main() {
         numego -=1;
     }
     println!("Leifte Off!");
+
+    let n = [10,20,30,40,50];
+
+    for number in n {
+        println!("The element is {number}");
+    }
+
+    for number in (1..4).rev() {
+        println!("{number}");
+    }
 }
