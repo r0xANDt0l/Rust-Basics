@@ -1,6 +1,6 @@
 fn main() {
-    let temperature : i32 = -20;
-    let unit : char = 'f'; // c for celsius, f for fahrenheit
+    let temperature : i32 = 0;
+    let unit : char = 'c'; // c for celsius, f for fahrenheit
 
     if unit == 'c' {
         let temperature : i32 = temperature * (9/5) + 32;
